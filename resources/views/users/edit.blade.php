@@ -42,6 +42,12 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
+                    <strong>Email:</strong>
+                    <input type="email" name="email" value="{{ $user->email }}" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
                     <strong>Date of Birth:</strong>
                     <input type="text" name="birthDate" value="{{ $user->birthDate }}" class="form-control">
                 </div>
@@ -62,7 +68,7 @@
                 <div class="form-group">
                 <strong>Language:</strong>
                 <select class="form-control" name="language" id="language">
-                    <option value="{{ $user->language }}">
+                    <option value="{{ $user->language }}" selected>{{ $user->language }}</option>
                     <option value="English">English</option>
                     <option value="Sepedi">Sepedi</option>
                     <option value="Xhosa">Xhosa</option>

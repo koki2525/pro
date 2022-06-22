@@ -15,7 +15,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::latest()->paginate(5);
+        //$users = User::latest()->paginate(5);
+        $users = User::where('role','!=','administrator')->paginate(5);
   
         return view('home',compact('users'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
@@ -47,7 +48,7 @@ class UserController extends Controller
             'language' => 'required'
         ]);
         $input = $request->all();
-        $input['interests'] = implode(" ",$request->input('interests'));
+        $input['interests'] = implode(",",$request->input('interests'));
         //$comma_separated = implode(",", $request->input('interests'));
         User::create($input);
 
@@ -99,10 +100,8 @@ class UserController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'surname' => 'required',
             'idNumber' => 'required',
-            'email' => 'required',
-            'language' => 'required'
+            'email' => 'required'
         ]);
   
         $user->update($request->all());

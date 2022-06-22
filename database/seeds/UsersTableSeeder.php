@@ -17,6 +17,17 @@ class UsersTableSeeder extends Seeder
             'idNumber' => '9110251111111',
             'mobileNumber' => '0716157192',
             'language' => 'English',
+            'password' => Hash::make('123'),
+            'role' => 'administrator'
+        ]);
+
+        App\User::create([
+            'name' => 'Test User',
+            'surname' => 'Number 1',
+            'email' => 'koki@gmail.com',
+            'idNumber' => '91102535411111',
+            'mobileNumber' => '071454657192',
+            'language' => 'Sotho',
             'password' => Hash::make('123')
         ]);
     }

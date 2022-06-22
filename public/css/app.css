@@ -10953,3 +10953,16 @@ a.text-dark:focus {
   }
 }
 
+.center {
+  margin-left: 22rem;
+}
+
+.homeHeader {
+  margin-left: 19rem;
+}
+
+.alignForm {
+  margin-left: 10rem;
+  width: 50%;
+}
+

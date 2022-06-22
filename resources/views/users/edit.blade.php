@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit User</h2>
+                <h2 class="homeHeader">Edit User</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('home') }}"> Back</a>
+                <a class="center btn btn-primary" href="{{ route('home') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
         </div>
     @endif
   
-    <form action="{{ route('users.update',$user->id) }}" method="POST">
+    <form class="alignForm" action="{{ route('users.update',$user->id) }}" method="POST">
         @csrf
         @method('PUT')
    
@@ -31,13 +31,53 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $user->name }}" class="form-control" placeholder="Name">
+                    <input type="text" name="name" value="{{ $user->name }}" class="form-control">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Surname:</strong>
-                    <textarea class="form-control" style="height:150px" name="surname" placeholder="Surname">{{ $user->surname }}</textarea>
+                    <input type="text" name="surname" value="{{ $user->surname }}" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Date of Birth:</strong>
+                    <input type="text" name="birthDate" value="{{ $user->birthDate }}" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>SA ID Number:</strong>
+                    <input type="text" name="idNumber" value="{{ $user->idNumber }}" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Mobile Number:</strong>
+                    <input type="text" name="mobileNumber" value="{{ $user->mobileNumber }}" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                <strong>Language:</strong>
+                <select class="form-control" name="language" id="language">
+                    <option value="{{ $user->language }}">
+                    <option value="English">English</option>
+                    <option value="Sepedi">Sepedi</option>
+                    <option value="Xhosa">Xhosa</option>
+                    <option value="Zulu">Zulu</option>
+                    <option value="Sotho">Sotho</option>
+                    <option value="Afrikaans">Afrikaans</option>
+                    <option value="Tsonga">Tsonga</option>
+                    <option value="Venda">Venda</option>
+                </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Interests:</strong>
+                    <input type="text" name="surname" value="{{ $user->interests }}" class="form-control">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

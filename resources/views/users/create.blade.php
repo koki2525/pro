@@ -46,7 +46,7 @@
             </div>
             <div class="form-group">
                 <strong>Mobile Number:</strong>
-                <input type="text" name="mobileNumber" class="form-control" placeholder="Mobile Number">
+                <input type="text" name="mobileNumber" maxlength="10" class="form-control" placeholder="Mobile Number">
             </div>
             <div class="form-group">
                 <strong>Birth Date:</strong>

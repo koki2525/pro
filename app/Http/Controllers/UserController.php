@@ -45,7 +45,8 @@ class UserController extends Controller
             'surname' => 'required',
             'idNumber' => 'required',
             'email' => 'required',
-            'language' => 'required'
+            'language' => 'required',
+            'birthDate' => 'required'
         ]);
         $input = $request->all();
         $input['interests'] = implode(",",$request->input('interests'));

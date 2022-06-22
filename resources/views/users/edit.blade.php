@@ -61,7 +61,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Mobile Number:</strong>
-                    <input type="text" name="mobileNumber" value="{{ $user->mobileNumber }}" class="form-control">
+                    <input type="text" name="mobileNumber" maxlength="10" value="{{ $user->mobileNumber }}" class="form-control">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

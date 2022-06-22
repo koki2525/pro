@@ -1,4 +1,4 @@
-This application is written in Laravel 7.
+<h1>This application is written in Laravel 7.</h1>
 
 Composer
 Composer is a dependecy manager for PHP needed to be able to install laravel using artisan commands on the termial

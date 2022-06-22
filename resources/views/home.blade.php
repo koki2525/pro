@@ -33,7 +33,7 @@
             <td>{{ $user->surname }}</td>
             <td>{{ $user->idNumber }}</td>
             <td>{{ $user->mobileNumber }}</td>
-            <td>{{ $user->birthDate }}</td>
+            <td>{{ date('j F Y', strtotime($user->birthDate)) }}</td>
             <td>
                 <form action="{{ route('users.destroy',$user->id) }}" method="POST">
    

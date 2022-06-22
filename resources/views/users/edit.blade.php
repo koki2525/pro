@@ -49,13 +49,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Date of Birth:</strong>
-                    <input type="text" name="birthDate" value="{{ $user->birthDate }}" class="form-control">
+                    <input type="date" name="birthDate" value="{{ $user->birthDate }}" class="form-control">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>SA ID Number:</strong>
-                    <input type="text" name="idNumber" value="{{ $user->idNumber }}" class="form-control">
+                    <input type="text" name="idNumber" maxlength="13" value="{{ $user->idNumber }}" class="form-control">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -83,7 +83,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Interests:</strong>
-                    <input type="text" name="surname" value="{{ $user->interests }}" class="form-control">
+                    <input type="text" name="interests" value="{{ $user->interests }}" class="form-control">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

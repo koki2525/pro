@@ -49,7 +49,6 @@ class UserController extends Controller
         ]);
         $input = $request->all();
         $input['interests'] = implode(",",$request->input('interests'));
-        //$comma_separated = implode(",", $request->input('interests'));
         User::create($input);
 
         $name = $request->get('name');

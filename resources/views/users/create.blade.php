@@ -42,7 +42,7 @@
             </div>
             <div class="form-group">
                 <strong>SA ID Number:</strong>
-                <input type="text" name="idNumber" class="form-control" placeholder="ID Number">
+                <input type="text" name="idNumber" maxlength="13" class="form-control" placeholder="ID Number">
             </div>
             <div class="form-group">
                 <strong>Mobile Number:</strong>
@@ -50,7 +50,7 @@
             </div>
             <div class="form-group">
                 <strong>Birth Date:</strong>
-                <input type="text" name="birthDate" class="form-control" placeholder="Birth Date">
+                <input type="date" name="birthDate" class="form-control" placeholder="Birth Date">
             </div>
             <div class="form-group">
             <strong>Language:</strong>
